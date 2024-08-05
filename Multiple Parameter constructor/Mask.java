@@ -17,6 +17,7 @@ class Mask
 	
 	public Mask(char size)
 	{
+
 		this.size=size;	
 	}
 	
@@ -36,6 +37,7 @@ class Mask
 	{
 		this.cost=cost;
 		this.size=size;
+		
 	}
 
 
