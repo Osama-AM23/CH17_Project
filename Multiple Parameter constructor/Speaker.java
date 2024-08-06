@@ -14,7 +14,7 @@ class Speaker
 	
 	public void setSpeaker(char size)
 	{
-		this.size=size;
+		this.size=size; 
 
 	}
 	public void print()
