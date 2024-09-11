@@ -33,7 +33,7 @@ public class Kettle {
 				Kettle casted = (Kettle) obj; // casting
 				if (this.brand.equals(casted.brand) && this.price == casted.price && this.capacity == casted.capacity ) {
 					System.out.println("Lhs and Rhs is Equal");
-
+					return true;
 				}
 			} else {
 				System.out.println("Obj is not a Jeans");

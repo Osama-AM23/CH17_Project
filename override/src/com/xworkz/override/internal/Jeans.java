@@ -30,22 +30,34 @@ public class Jeans {
 
 	// over-ride the equals method
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) 
+	{
 		System.out.println("Running a equals in Jeans");
 
-		if (obj != null) {
-			if (obj instanceof Jeans) {
+		if (obj != null)
+		{
+			if (obj instanceof Jeans)
+			{
 				Jeans casted = (Jeans) obj; // casting
-				if (this.brand.equals(casted.brand) && this.price == casted.price) {
-					System.out.println("Lhs and Rhs is Equal");
-
-				}
-			} else {
-				System.out.println("Obj is not a Jeans");
-			}
-		} else {
+				
+				
+				         if (this.size==casted.size && this.price == casted.price)
+				         {
+					     System.out.println("Lhs and Rhs is Equal");
+					     return true;
+                         }
+			             else
+			             {
+			             	System.out.println("Obj is not a Jeans");
+	                     }
+			}  
+	    }
+			
+		else 
+		{
 			System.out.println("Obj is null");
 		}
+		
 		return super.equals(obj);
 	}
 

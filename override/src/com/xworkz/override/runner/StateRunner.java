@@ -12,7 +12,7 @@ public class StateRunner {
 		
 		
 		boolean areEqual=state.equals(state2);
-		System.out.println("State and State2 is:"+areEqual);
+		System.out.println("State and State2 is:"+areEqual);//false
 	}
 
 }

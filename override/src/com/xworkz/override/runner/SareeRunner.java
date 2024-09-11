@@ -8,7 +8,7 @@ public class SareeRunner {
 		
 		Saree saree1= new Saree("MIRCHI ","Silk" , 999, "White", "5%","Sourbh");
 		
-		Saree saree2= new Saree("MIRCHI", "Slik", 890, "Yellow","5%", "Moltira");
+		Saree saree2= new Saree("MIRCHI", "Silk", 999, "Yellow","5%", "Moltira");
 		
 		boolean equal=saree1.equals(saree2);
 		System.out.println("Saree1 and Saree2 is :"+equal);

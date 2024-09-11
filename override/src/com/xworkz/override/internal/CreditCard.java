@@ -33,6 +33,7 @@ public class CreditCard {
 				CreditCard credit = (CreditCard) obj;
 				if (this.holderName.equals(credit.holderName) && this.limit == credit.limit) {
 					System.out.println("left and right is Same");
+					return true;
 				}
 			} else {
 				System.out.println("Obj is a not Credit Card");

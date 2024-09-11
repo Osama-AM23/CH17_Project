@@ -11,7 +11,7 @@ public class CountryRunner {
 		Country country2=new Country("America", 50, 345785329, "Joe Biden", 1776, 00001);
 		
 		boolean compare=country.equals(country2);
-		System.out.println("Country and Country2 is :"+compare);
+		System.out.println("Country and Country2 is :"+compare);//false
 	}
 
 }

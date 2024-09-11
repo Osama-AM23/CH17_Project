@@ -35,7 +35,7 @@ public class Bedsheet {
 				if(this.material.equals(bedsheet.material) && this.quantity== bedsheet.quantity && this.price== bedsheet.price)
 				{
 					System.out.println("Lhs and Rhs is Same");
-				
+					return true;
 				}
 			}else {
 				System.out.println("Obj is not BedSheet");

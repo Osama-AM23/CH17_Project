@@ -32,6 +32,7 @@ public class State {
 				State state=(State)obj;
 				if(this.name.equals(state.name) && this.noOfDistrict==state.noOfDistrict) {
 					System.out.println("left and right is Same");
+					return true;
 				}
 			}else {
 				System.out.println("Obj is a Not State");

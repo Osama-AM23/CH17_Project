@@ -18,13 +18,13 @@ public class Helmet {
 		this.warranty = warranty;
 		this.seller = seller;
 	}
-
+	// over-ride a toString method
 	@Override
 	public String toString() {
 		return "Helmet [brand=" + brand + ", size=" + size + ", color=" + color + ", price=" + price + ", warranty="
 				+ warranty + ", seller=" + seller + "]";
 	}
-
+	//over-ride the equals method
 	@Override
 	public boolean equals(Object obj) {
 		System.out.println("Running a euqals in Helmet");
@@ -33,6 +33,7 @@ public class Helmet {
 				Helmet helmet = (Helmet) obj;
 				if (this.brand.equals(helmet.brand) && this.price == helmet.price) {
 					System.out.println("left and right is Same");
+					return true;
 				}
 			} else {
 				System.out.println("Obj is a Not Helmet");

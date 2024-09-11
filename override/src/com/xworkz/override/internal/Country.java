@@ -35,6 +35,7 @@ public class Country {
 				Country country=(Country)obj;
 				if(this.name.equals(country.name) && this.noOfState==country.noOfState) {
 					System.out.println("left and right is Same");
+					return true;
 				}
 			}else {
 				System.out.println("Obj is a Country");

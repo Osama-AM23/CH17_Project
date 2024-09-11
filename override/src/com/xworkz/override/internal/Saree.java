@@ -33,8 +33,8 @@ public class Saree {
 			if (obj instanceof Saree) {
 				Saree saree = (Saree) obj;
 				if (this.type.equals(saree.type) && this.price == saree.price && this.offer.equals(saree.offer)) {
-					System.out.println("Rhs and Lhs is equal");
-
+					System.out.println("equal");
+					return true;
 				}
 			} else {
 				System.out.println("Obj is Not a Saree");
