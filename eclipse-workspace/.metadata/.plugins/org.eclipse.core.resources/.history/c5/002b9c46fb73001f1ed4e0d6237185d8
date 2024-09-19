@@ -1,0 +1,11 @@
+package com.xworkz.procedure.internal;
+
+public interface HospitalRule {
+	
+	int noOfVisiters();
+	
+	boolean noSmoking();
+	
+	boolean beSilent();
+
+}

@@ -1,0 +1,25 @@
+package com.xowrkz.abstractexample.runner;
+
+import com.xworkz.abstractexample.internetprovider.AirtelInternetProvider;
+import com.xworkz.abstractexample.internetprovider.InternetProvider;
+
+public class ProviderRunner {
+
+	public static void main(String[] args) {
+		
+		InternetProvider internet1= new InternetProvider("ACT fibernet", "Bala Malladi");
+		InternetProvider internet2= new InternetProvider("ACT fibernet", "Bala Malladi");
+
+		internet1.toString();
+		boolean same=internet2.equals(internet1);
+		System.out.println(same);
+		internet1.service();
+		
+		System.out.println("---------------");
+		
+		AirtelInternetProvider airtelInternet= new AirtelInternetProvider("Amdocs", "Shuky Sheffer");
+		
+		
+	}
+
+}

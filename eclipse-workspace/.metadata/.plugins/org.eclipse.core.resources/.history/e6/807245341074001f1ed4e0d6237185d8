@@ -1,0 +1,21 @@
+package com.xworkz.procedure.classimp;
+
+import com.xworkz.procedure.internal.HospitalRule;
+import com.xworkz.procedure.internal.NimansHospital;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		HospitalRule hospital= new NimansHospital();
+		System.out.println("Visiting Person:"+hospital.noOfVisiters());
+		System.out.println("Admission:"+hospital.getAdmissionPolicy());
+		System.out.println("Silent:"+hospital.beSilent());
+		
+		System.out.println("+++++++++++++++++++++++++");
+	
+		
+	}
+	
+
+}

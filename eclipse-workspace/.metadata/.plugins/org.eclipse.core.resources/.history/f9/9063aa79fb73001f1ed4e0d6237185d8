@@ -1,0 +1,22 @@
+package com.xworkz.procedure.internal;
+
+public class NimansHospital implements HospitalRule {
+
+	@Override
+	public int noOfVisiters() {
+		System.out.println("Execute a noOfVisiters in NimansHospital");
+		return 1;
+	}
+
+	@Override
+	public boolean noSmoking() {
+		System.out.println("Execute a noSmoking in NimansHospital");
+		return true;
+	}
+
+	@Override
+	public boolean beSilent() {
+		System.out.println("Execute a beSilent in NimansHospital");
+		return true;
+	}
+}

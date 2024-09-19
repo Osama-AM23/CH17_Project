@@ -1,0 +1,13 @@
+package com.xworkz.implanduse.interfaces;
+
+public interface VehicalRepository {
+	
+	void save();
+	
+	void update();
+	
+	boolean delete();
+	
+	String read();
+
+}

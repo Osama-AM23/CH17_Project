@@ -1,0 +1,91 @@
+package com.xowrkz.abstractexample.runner;
+
+import com.xworkz.abstractexample.booking.BookingProvider;
+import com.xworkz.abstractexample.internetprovider.AirtelInternetProvider;
+import com.xworkz.abstractexample.internetprovider.ExtremeAirtelInternetProvider;
+import com.xworkz.abstractexample.internetprovider.Fast5gExtreme;
+import com.xworkz.abstractexample.internetprovider.InternetProvider;
+import com.xworkz.abstractexample.internetprovider.JioInternetProvider;
+import com.xworkz.abstractexample.internetprovider.SatelliteJioIntProvider;
+
+public class ProviderRunner {
+
+	public static void main(String[] args) {
+
+		InternetProvider internet1 = new InternetProvider("ACT fibernet", "Bala Malladi");
+		InternetProvider internet2 = new InternetProvider("ACT fibernet", "Bala Malladi");
+		// Displaying object details and checking equality
+		System.out.println(internet1.toString());
+		boolean same = internet2.equals(internet1);
+		System.out.println("Internet1 and Internet2 :" + same);
+		internet1.service();
+
+		System.out.println("---------------");
+
+		AirtelInternetProvider airtelInternet1 = new AirtelInternetProvider("Amdocs", "Shuky Sheffer");
+		AirtelInternetProvider airtelInternet2 = new AirtelInternetProvider("Ericsson", "Borje Ekholm");
+		// Displaying object details and checking equality
+		System.out.println(airtelInternet1.toString());
+		boolean equal = airtelInternet1.equals(airtelInternet2);
+		System.out.println("airtelInternet1 and airtelInternet2 :" + equal);
+		airtelInternet1.service();
+
+		System.out.println("---------------");
+		
+		ExtremeAirtelInternetProvider extremeAirtel1= new ExtremeAirtelInternetProvider("ultra-speed internet","Christopher Coleman");
+		ExtremeAirtelInternetProvider extremeAirtel2= new ExtremeAirtelInternetProvider("Airtel Xstream Fiber","Soumen Ray");
+		// Displaying object details and checking equality
+		System.out.println(extremeAirtel1.toString());
+		boolean areEqual= extremeAirtel2.equals(extremeAirtel1);
+		System.out.println("Extreme Airtel1 and Extreme Airtel2 :"+ areEqual);
+		extremeAirtel1.service();
+		
+		System.out.println("---------------");
+		
+		Fast5gExtreme fivegExtreme = new Fast5gExtreme("Airtel Xstream router", "Gopal Vittal");
+		Fast5gExtreme fivegExtreme2= new Fast5gExtreme("Airtel Xstream router", "Gopal Vittal");
+		// Displaying object details and checking equality
+		System.out.println(fivegExtreme.toString());
+		boolean areSame=fivegExtreme.equals(fivegExtreme2);
+		System.out.println("5GExtreme and 5GExtreme2 :"+areSame);
+		fivegExtreme.service();
+		
+		System.out.println("---------------");
+		
+		JioInternetProvider jioInternet1= new JioInternetProvider("HSI", "Akash Ambani");
+		JioInternetProvider jioInternet2= new JioInternetProvider("HAI", "Anuj Jain ");
+		// Displaying object details and checking equality
+		System.out.println(jioInternet1.toString());
+		boolean compare=jioInternet1.equals(jioInternet2);
+		System.out.println("JioInternet1 and JioInternet2 :"+compare);
+		jioInternet1.service();
+		System.out.println("---------------");
+		
+		SatelliteJioIntProvider satJioInternet1= new SatelliteJioIntProvider("Orbit Connect India", "Matt Chiasson",  115000, "19th April 1975");
+		SatelliteJioIntProvider satJioInternet2= new SatelliteJioIntProvider("OCI-network", "Matt chan",  115000, "19th April 1975");
+		// Displaying object details and checking equality
+		System.out.println(satJioInternet1.toString());
+		boolean differ= satJioInternet1.equals(satJioInternet2);
+		System.out.println("satJioInternet1 and satJioInternet2 :"+differ);
+		satJioInternet1.service();
+		System.out.println("---------------");
+		
+		BookingProvider booking1= new BookingProvider("Web Links","Vills kavin");
+		BookingProvider booking2= new BookingProvider("I Ticket Dot in", "	Sh. Ajit Kumar");
+		// Displaying object details and checking equality
+		System.out.println(booking1.toString());
+		boolean ref=booking1.equals(booking2);
+		System.out.println("Booking1 and Booking2 is :"+ref);
+		booking1.service();
+		System.out.println("---------------");
+
+		
+	
+		
+		
+		
+
+				
+	}
+ 
+}

@@ -1,0 +1,20 @@
+package com.xworkz.abstractexample.internetprovider;
+
+public class SatelliteJioIntProvider extends JioInternetProvider{
+	
+	public double cost;
+	public String launchDate;
+	
+	public SatelliteJioIntProvider(String name, String ceo) {
+		super(name, ceo);
+		System.out.println("Constructor of Satellite Jio Internet Provider with name and CEO");
+	}
+	
+	public SatelliteJioIntProvider(double cost, String launchDate) {
+		super("DefaultName", "DefaultCEO");
+		System.out.println("Constructor Of Satellite Jio Internet Provider with Cost and Launch Date");
+		this.cost=cost;
+		this.launchDate=launchDate;
+		// TODO Auto-generated constructor stub
+	}
+}

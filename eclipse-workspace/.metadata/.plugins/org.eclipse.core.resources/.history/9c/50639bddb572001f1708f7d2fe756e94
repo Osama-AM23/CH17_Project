@@ -1,0 +1,18 @@
+package com.xworkz.abstractexample.booking;
+
+public class BookMyShow extends MovieBookingProvider {
+
+	public int totalHalls;
+
+	public BookMyShow(String name, String ceo) {
+		super(name, ceo);
+		System.out.println("Constructor of Book My Show with name and Ceo");
+	}
+
+	public BookMyShow(int totalHalls) {
+		super("DefaultName", "DefaultCEO");
+		System.out.println("Constructor of Book My Show with total Halls");
+		this.totalHalls = totalHalls;
+	}
+
+}

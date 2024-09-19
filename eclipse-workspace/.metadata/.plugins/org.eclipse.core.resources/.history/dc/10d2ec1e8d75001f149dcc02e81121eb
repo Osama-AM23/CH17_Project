@@ -1,0 +1,10 @@
+package com.xworkz.using.runner;
+
+public class TrafficRule {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

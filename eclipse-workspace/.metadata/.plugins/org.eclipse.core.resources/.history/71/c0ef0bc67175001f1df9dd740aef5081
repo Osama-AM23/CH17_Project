@@ -1,0 +1,17 @@
+package com.xworkz.using.imp;
+
+public class CanaraHotelRule{
+	
+	
+	private HotelRule hotelRule;
+	
+	public void setHotelRule(HotelRule hotelRule)
+	{
+		this.hotelRule= hotelRule;
+	}
+
+	public void check()
+	{
+		hotelRule.cleanPremises();
+	}
+}

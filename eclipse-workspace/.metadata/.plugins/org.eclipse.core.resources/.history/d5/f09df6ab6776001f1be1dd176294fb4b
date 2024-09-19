@@ -1,0 +1,21 @@
+package com.xworkz.implanduse.main;
+
+import com.xworkz.implanduse.impl.AddressRepositoryImpl;
+import com.xworkz.implanduse.impl.AddressServiceImpl;
+import com.xworkz.implanduse.interfaces.AddressRepository;
+import com.xworkz.implanduse.interfaces.AddressService;
+
+public class AddressServiceRunner {
+
+	public static void main(String[] args) {
+		
+		AddressRepository repository= new AddressRepositoryImpl();
+		
+		AddressService service= new AddressServiceImpl(repository);
+		service.push();
+		service.refresh();
+		service.remove();
+		service.load();
+	}
+
+}

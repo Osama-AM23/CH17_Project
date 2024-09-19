@@ -1,0 +1,14 @@
+package com.xworkz.implanduse.interfaces;
+
+public interface VehicleService {
+	
+	void persist();
+	
+	void update();
+	
+	boolean delete();
+	
+	String read();
+	
+
+}

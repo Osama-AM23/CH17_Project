@@ -1,0 +1,32 @@
+package com.xworkz.implanduse.impl;
+
+public class VehicleServiceImpl implements com.xworkz.implanduse.interfaces.VehicleService {
+	
+	private 
+	
+	
+	@Override
+	public void persist() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean delete() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String read() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.xworkz.encapsulation.runner;
+
+import com.xworkz.encapsulation.example.Employee;
+
+public class EmployeeRunner {
+
+	public static void main(String[] args) {
+		
+		Employee emp= new Employee();
+		emp.setName("Aswin");
+		emp.getName();
+		emp.setAge(20);
+		emp.getAge();
+		emp.setSalary(40000);
+		emp.getSalary();
+
+	}
+
+}

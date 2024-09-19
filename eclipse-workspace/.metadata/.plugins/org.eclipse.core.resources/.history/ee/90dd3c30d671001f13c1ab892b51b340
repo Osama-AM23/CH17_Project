@@ -1,0 +1,15 @@
+package com.xworkz.abstractexample;
+
+public class InternetProvider extends Provider{
+	
+	public InternetProvider(String name, String ceo) {
+		super(name, ceo);
+		
+	}
+	@Override
+	public void service() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

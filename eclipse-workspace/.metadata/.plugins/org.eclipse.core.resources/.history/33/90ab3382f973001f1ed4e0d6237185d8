@@ -1,0 +1,23 @@
+package com.xworkz.procedure.internal;
+
+public class NimansHospital implements HospitalRule {
+
+	
+	@Override
+	public int noOfVisiters() {
+		// TODO Auto-generated method stub
+		return 1;
+	}
+	
+	@Override
+	public boolean noSmoking() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+	@Override
+	public boolean beSilent() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+}

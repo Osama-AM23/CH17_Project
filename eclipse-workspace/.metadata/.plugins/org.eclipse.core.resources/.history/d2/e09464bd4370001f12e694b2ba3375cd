@@ -1,0 +1,12 @@
+package com.xworkz.example.internal;
+
+import java.lang.System.*;
+public class Footwear {
+	
+	public static void main(String[] args) {
+		
+		out.println("Executed main Method");
+		
+	}
+
+}

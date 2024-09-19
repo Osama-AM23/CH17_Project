@@ -1,0 +1,10 @@
+package com.xworkz.abstractexample;
+
+public class JioInternetProvider extends InternetProvider {
+
+	public JioInternetProvider(String name, String ceo) {
+		super(name, ceo);
+		System.out.println("Constructor of Jio Internet Provider");
+	}
+
+}

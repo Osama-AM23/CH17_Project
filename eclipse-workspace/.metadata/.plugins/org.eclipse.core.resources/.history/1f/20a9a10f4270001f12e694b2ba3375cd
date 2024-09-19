@@ -1,0 +1,13 @@
+package com.xworkz.example.internal;
+
+import static java.lang.System.*;
+import static java.lang.Math.*;
+
+public class Specs {
+	public static void main(String[] args) {
+		out.println("Execute the main method");
+		out.println("Lenskart");
+		out.println(sqrt(PI));
+	}
+
+}

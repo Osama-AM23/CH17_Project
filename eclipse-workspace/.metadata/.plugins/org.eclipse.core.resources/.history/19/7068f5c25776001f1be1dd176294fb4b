@@ -1,0 +1,46 @@
+package com.xworkz.implanduse.impl;
+
+import com.xworkz.implanduse.interfaces.AddressRepository;
+import com.xworkz.implanduse.interfaces.AddressService;
+
+public class AddressServiceImpl implements AddressService {
+	
+	private AddressRepository addressRepository;
+	
+	public AddressServiceImpl(AddressRepository addressRepository) {
+		this.addressRepository=addressRepository;
+	}
+	@Override
+	public void push() {
+		if(addressRepository != null) {
+			boolean saved=addressRepository.save();
+			if(saved) {
+				System.out.println("Saved Successfully");
+			}
+		}else {
+			System.out.println("Failed");
+		}
+		
+	}
+
+	@Override
+	public void refresh() {
+		System.out.println("Refersh in AddressService Impl");
+		
+	}
+
+	@Override
+	public void remove() {
+		System.out.println("Remove in AddressService Impl");
+		
+	}
+
+	@Override
+	public void load() {
+		System.out.println("Load in AddressService Impl");
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,16 @@
+package com.xworkz.example.internal;
+
+import static java.lang.System.out;
+
+import java.lang.System.*;
+public class Footwear {
+	
+	public static void main(String[] args) {
+		
+		out.println("Execute the main method");	
+		out.println("Mens FootWear");
+		out.println("Sandals");
+		out.println(2000);
+	}
+
+}

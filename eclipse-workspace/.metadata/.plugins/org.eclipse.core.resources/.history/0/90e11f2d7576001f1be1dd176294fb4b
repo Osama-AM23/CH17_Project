@@ -1,0 +1,5 @@
+package com.xworkz.implanduse.interfaces;
+
+public interface MachineService {
+
+}

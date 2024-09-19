@@ -1,0 +1,13 @@
+package com.xworkz.implanduse.interfaces;
+
+public interface AddressService {
+	
+	void push();
+	
+	void refresh();
+	
+	void remove();
+	
+	void load();
+
+}

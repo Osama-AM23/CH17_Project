@@ -1,0 +1,61 @@
+package com.xworkz.implanduse.impl;
+
+import com.xworkz.implanduse.interfaces.MachineService;
+
+public class MachineServiceImpl implements MachineService {
+	
+	private MachineService machineService;
+	
+	public MachineServiceImpl(MachineService machineService) {
+		this.machineService=machineService;
+	}
+	
+	
+	@Override
+	public void save() {
+		if(machineService != null) {
+			System.out.println("Save is not Null");
+			machineService.save();
+		}else {
+			System.out.println("Save is Null");
+		}
+		
+	}
+
+	@Override
+	public int update() {
+		if(machineService != null) {
+			int version=machineService.update();
+			if(version >=1) {
+				System.out.println("Updated Status:"+version);
+				return version;
+				
+			}
+			else {
+				System.out.println("cannot update");
+			}
+		}
+		return 0;
+	}
+
+	@Override
+	public int delete() {
+		if(machineService != null) {
+			int check=machineService.delete();
+			if(check >0) {
+				System.out.println("Deleted files"+check);
+			}
+			else {
+				System.out.println("Cannot deleted");
+			}
+		}
+		return 0;
+	}
+
+	@Override
+	public int read() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

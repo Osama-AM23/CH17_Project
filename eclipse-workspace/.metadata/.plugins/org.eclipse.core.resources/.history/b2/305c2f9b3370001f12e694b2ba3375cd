@@ -1,0 +1,8 @@
+package com.xworkz.example.internal;
+
+public class Company extends Samsung {
+	
+	public Company(String model, double price) {
+		super(model,price);
+	}
+}

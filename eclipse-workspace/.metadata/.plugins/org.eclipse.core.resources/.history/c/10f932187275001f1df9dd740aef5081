@@ -1,0 +1,13 @@
+package com.xworkz.using.imp;
+
+public class FoodSafetyDepartment implements HotelRule {
+	
+	void inspection()
+	{
+		System.out.println("Inspection in Food Safety Department");
+		
+		
+		
+	}
+
+}

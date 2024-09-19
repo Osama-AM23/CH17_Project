@@ -1,0 +1,7 @@
+package com.xworkz.implanduse.impl;
+
+import com.xworkz.implanduse.interfaces.Repository;
+
+public class RepositoryImpl implements Repository {
+
+}

@@ -1,0 +1,12 @@
+package diamondProblem.example;
+//not supported in Java 
+public class Runner extends RailwayStation, PoliceStation {
+	
+
+	public static void main(String[] args) {
+		
+		Runner runner= new Runner();
+		runner.display();// which display() method to call confused
+	}
+
+}

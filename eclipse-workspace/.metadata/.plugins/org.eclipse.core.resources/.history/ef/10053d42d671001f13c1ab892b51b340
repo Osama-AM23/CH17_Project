@@ -1,0 +1,9 @@
+package com.xworkz.abstractexample;
+
+public class AirtelInternetProvider extends InternetProvider {
+	
+	public AirtelInternetProvider(String name, String ceo) {
+		super(name, ceo);
+	}
+
+}
