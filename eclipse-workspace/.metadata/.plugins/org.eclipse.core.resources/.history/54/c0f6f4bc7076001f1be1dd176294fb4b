@@ -1,5 +1,0 @@
-package com.xworkz.implanduse.impl;
-
-public class VehicleService implements com.xworkz.implanduse.interfaces.VehicleService {
-
-}

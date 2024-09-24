@@ -1,9 +1,0 @@
-package com.xworkz.abstractexample;
-
-public class SatelliteJioIntProvider extends JioInternetProvider{
-	
-	public SatelliteJioIntProvider(String name, String ceo) {
-		super(name, ceo);
-		// TODO Auto-generated constructor stub
-	}
-}

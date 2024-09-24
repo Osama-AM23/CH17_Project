@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.xworkz.using.runner.TrafficRule&apos; to &apos;TrafficRunner&apos;&#x0D;&#x0A;- Original project: &apos;using&apos;&#x0D;&#x0A;- Original element: &apos;com.xworkz.using.runner.TrafficRule&apos;&#x0D;&#x0A;- Renamed element: &apos;com.xworkz.using.runner.TrafficRunner&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TrafficRule&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.xworkz.using.runner{TrafficRule.java[TrafficRule" matchStrategy="1" name="TrafficRunner" qualified="false" references="true" similarDeclarations="false" stamp="1726644054304" textual="false" version="1.0"/>
-</session>

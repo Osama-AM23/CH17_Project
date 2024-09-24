@@ -1,7 +1,0 @@
-package com.xworkz.implanduse.impl;
-
-import com.xworkz.implanduse.interfaces.Serivce;
-
-public class ServiceImpl implements Serivce {
-
-}
