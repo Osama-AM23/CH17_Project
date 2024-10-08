@@ -370,6 +370,8 @@ public class FunctionalRunner {
 		// 43
 		// IntStream intStream=()->{
 		// IntSteam is a class, not a Functional interface.
+		
+		
 
 	}
 
