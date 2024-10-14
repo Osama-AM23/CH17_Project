@@ -101,7 +101,7 @@ public class ProductRunner {
 		System.out.println("--Product name by upper case--");
 		// Stream the collection, convert the names of the products to upper case, and
 		// print each upper case name to the console
-		collection.stream().map(caps -> caps.getName().toUpperCase()).forEach(give -> System.out.println(give));
+		collection.stream().forEach(give -> System.out.println(give.getName().toUpperCase()));
 	}
 
 }
