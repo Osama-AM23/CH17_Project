@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.xorkz.diffForms.service.CollegeForm;
+import com.xorkz.diffForms.service.CollegeFormImpl;
 import com.xworkz.diffForms.DTO.CollegeDTO;
 
 @WebServlet(loadOnStartup = 1, urlPatterns = "/apply")
@@ -39,7 +41,16 @@ public class CollegeServlet extends HttpServlet {
 		CollegeDTO college = new CollegeDTO(name, email, mobile, address, father, mother, percentage, course, convertedAge);
 		System.out.println("College DTO :"+college);
 		
-		resp.getWriter().println(college);
+		CollegeForm collegeForm = new CollegeFormImpl();
+		boolean isValid = collegeForm.validateAndSave(college);
+
+		if (isValid) {
+		    System.out.println("Data is valid");
+		} else {
+		    System.err.println("Data is invalid");
+		}
+		
+		resp.getWriter().println("Done");
 	}
 }	
 	

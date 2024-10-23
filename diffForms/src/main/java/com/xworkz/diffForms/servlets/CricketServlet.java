@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.xorkz.diffForms.service.CricketForm;
+import com.xorkz.diffForms.service.CricketFormImpl;
 import com.xworkz.diffForms.DTO.CricketDTO;
 @WebServlet(loadOnStartup = 1, urlPatterns = "/cricket")
 public class CricketServlet extends HttpServlet {
@@ -19,7 +21,7 @@ public class CricketServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		String name=req.getParameter("name");
+		String groundName= req.getParameter("groundName");
 		String customerName=req.getParameter("customerName");
 		String email=req.getParameter("customerEmail");
 		String seatType=req.getParameter("seatType");
@@ -28,7 +30,15 @@ public class CricketServlet extends HttpServlet {
 		
 		resp.setContentType("text/html");
 		
-		CricketDTO cricket = new CricketDTO(name, customerName, customerName, seatType, convertedTickets);
+		CricketDTO cricket = new CricketDTO(groundName, customerName, email, seatType, convertedTickets);		
+		CricketForm cricketForm= new CricketFormImpl();
+		boolean check=cricketForm.isApply(cricket);
+		
+		if(check) {
+			System.out.println("Data is valid");
+		}else {
+			System.err.println("Data is in-valid");
+		}
 		
 		System.out.println("Cricket Dto :"+cricket);
 		

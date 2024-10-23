@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.xorkz.diffForms.service.FeedBackForm;
+import com.xorkz.diffForms.service.FeedBackFormImpl;
 import com.xworkz.diffForms.DTO.FeedBackDTO;
 @WebServlet(loadOnStartup = 1, urlPatterns = "/feedback")
 public class FeedBackServlet extends HttpServlet {
@@ -27,6 +29,14 @@ public class FeedBackServlet extends HttpServlet {
 		
 		FeedBackDTO feedback= new FeedBackDTO(name, email, comment);
 		
+		FeedBackForm feedBackForm= new FeedBackFormImpl();
+		boolean isVerify=feedBackForm.validateAndSumbit(feedback);
+		
+		if(isVerify) {
+			System.out.println("Data is valid");
+		}else {
+			System.err.println("Data is in-valid");
+		}
 		System.out.println("FeedBack :"+feedback);
 		resp.getWriter().println(feedback);
 	}

@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.xorkz.diffForms.service.MovieFormImpl;
+import com.xorkz.diffForms.service.MovieTicketForm;
 import com.xworkz.diffForms.DTO.MovieDTO;
 @WebServlet(loadOnStartup = 1, urlPatterns = "/movie")
 public class MovieServlet extends HttpServlet{
@@ -31,6 +33,14 @@ public class MovieServlet extends HttpServlet{
 	
 	MovieDTO movie= new MovieDTO(name, convertedTicket, theaterName, seatType, donation, date, time);
 	System.out.println("Movie DTO :"+ movie);
+	
+	MovieTicketForm ticketForm= new MovieFormImpl();
+	boolean check=ticketForm.verify(movie);
+	if(check) {
+		System.out.println("Data is valid");
+	}else {
+		System.err.println("Data is in-valid");
+	}
 	
 	resp.getWriter().println(movie);
 	

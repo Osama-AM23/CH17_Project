@@ -2,7 +2,6 @@ package com.xworkz.diffForms.DTO;
 
 import java.io.Serializable;
 
-import javax.servlet.annotation.WebServlet;
 
 public class CricketDTO implements Serializable{
 	
