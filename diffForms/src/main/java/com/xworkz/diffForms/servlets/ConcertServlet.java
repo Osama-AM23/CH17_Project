@@ -38,9 +38,13 @@ public class ConcertServlet extends HttpServlet {
 		}else {
 			System.err.println("Data is in-valid");
 		}
+		
+		req.setAttribute("noOfTickets", noOfTickets);
+		req.getRequestDispatcher("/ConcertForm.jsp").forward(req, resp);
+
 		System.out.println("Concert DTO: "+ concert);
 		
-		resp.getWriter().println(concert);
+		//resp.getWriter().println(concert);
 	}
 
 }

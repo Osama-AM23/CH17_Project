@@ -42,7 +42,12 @@ public class MovieServlet extends HttpServlet{
 		System.err.println("Data is in-valid");
 	}
 	
-	resp.getWriter().println(movie);
+	req.setAttribute("name", name);
+	req.getRequestDispatcher("/MovieTicket.jsp").forward(req, resp);
+
+	
+	
+	//resp.getWriter().println(movie);
 	
 	
 	}

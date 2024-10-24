@@ -46,11 +46,15 @@ public class CollegeServlet extends HttpServlet {
 
 		if (isValid) {
 		    System.out.println("Data is valid");
+		    
 		} else {
 		    System.err.println("Data is invalid");
 		}
 		
-		resp.getWriter().println("Done");
+		req.setAttribute("name", name);
+		req.getRequestDispatcher("/CollegeForm.jsp").forward(req, resp);
+		
+		
 	}
 }	
 	

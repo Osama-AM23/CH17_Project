@@ -37,6 +37,10 @@ public class FeedBackServlet extends HttpServlet {
 		}else {
 			System.err.println("Data is in-valid");
 		}
+		
+		req.setAttribute("name", name);
+		req.getRequestDispatcher("/FeedBack.jsp").forward(req, resp);
+
 		System.out.println("FeedBack :"+feedback);
 		resp.getWriter().println(feedback);
 	}

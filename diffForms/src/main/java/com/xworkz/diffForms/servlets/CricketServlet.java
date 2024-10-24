@@ -40,9 +40,14 @@ public class CricketServlet extends HttpServlet {
 			System.err.println("Data is in-valid");
 		}
 		
-		System.out.println("Cricket Dto :"+cricket);
+		req.setAttribute("customerName", customerName);
+		req.getRequestDispatcher("/CricketTicket.jsp").forward(req, resp);
+
 		
-		resp.getWriter().println(cricket);
+		System.out.println("Cricket Dto :"+cricket);
+
+		
+		//resp.getWriter().println(cricket);
 		
 		
 	}
